@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Dog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="input-field-and-button">
+            <p class="error-text">Field Marked ❌ is Important</p>
+            <input type="text" placeholder="Type the Breed❌" class="input-space" id="breed">
+            <input type="text" placeholder="Type the Sub-Breed" class="input-space sub-breed">
+            <button class="submit-btn js-btn">SUBMIT</button>
+        </div>
+        <div class="img js-img">
+            <div class="circle js-circle"></div> 
+            <!-- <img src="" alt="dog-img" class="image"> -->
+            <div class="error-display">
+                <h3>FAILED TO LOAD IMAGE</h3>
+                <h3>AN ERROR OCCURED: CLICK THE SUBMIT BUTTON AGAIN</h3>
+                <h5>Tips:</h5>
+                <p>Check your internet</p>
+                <p>Check your spelling</p>
+                <p>Fill out Important Fields</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

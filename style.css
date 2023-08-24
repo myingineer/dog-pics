@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+.main-container {
+    /* border: 2px solid saddlebrown; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 80vh;
+    width: 80vw;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.input-field-and-button {
+    border: 1px solid saddlebrown;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 15px;
+    justify-content: center;
+}
+
+.input-space {
+    width: 80%;
+    height: 45px;
+    border: 0.5px solid gray;
+    outline: none;
+    text-indent: 20px;
+}
+
+
+::-webkit-input-placeholder {
+    color: cornflowerblue;
+    font-weight: 500;
+    font-style: italic;
+}
+
+input {
+    margin: 10px;
+}
+
+.submit-btn {
+    width: 80%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.submit-btn:hover {
+    background-color: cornflowerblue;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.img {
+    border: 1px solid seagreen;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 95.5%;
+    align-items: center;
+}
+
+.image {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+    border-top-color: cornflowerblue;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.error-display {
+    display: none;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+h5 {
+    margin-top: 10px;
+    color: red;
+    font-size: 18px;
+}
+
+p{
+    color: red;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .input-field-and-button {
+        width: 90%;
+    }
+
+    .img {
+        width: 92%;
+    }
+
+    .input-space {
+        width: 90%;
+    }
+
+    .submit-btn {
+        width: 90%;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+}
